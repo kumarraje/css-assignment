@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <!-- Method 3: External CSS -->
+    <link rel="stylesheet" href="Q1_styles.css">
+    <style>
+        /* <!-- Method 2: Internal CSS --> */
+        .box2,.box4,.box5 {
+            background-color: lightcoral;
+            padding: 20px;
+            margin: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Method 1: Inline CSS -->
+    <div class="box1" style="font-size: 24px; background-color: lightblue; padding: 20px; margin: 10px;">Box 1 (Inline CSS)</div>
+    <!-- Method 2: Internal CSS -->
+    <div class="box2">Box 2 (Internal CSS)</div>
+    <!-- Method 3: External CSS -->
+    <div class="box3">Box 3 (External CSS)</div>
+    <!-- Method 4: (Inline + Internal CSS) -->
+    <div class="box4" style="font-size: 24px; background-color: lightblue; padding: 20px; margin: 10px;">Box 4 (Inline + Internal CSS)</div>
+    <!-- Method 5: (Internal + External CSS) -->
+    <div class="box5">Box 5 (Internal + External CSS)</div>
+    <!-- Method 6: (Inline + Internal + External CSS) -->
+    <div class="box6" style="font-size: 24px; background-color: lightblue; padding: 20px; margin: 10px;">Box 6 (Inline + Internal + External CSS)</div>
+</body>
+</html>

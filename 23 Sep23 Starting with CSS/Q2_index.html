@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEM Naming Convention Example</title>
+    <style>
+        /* Block */
+        .paragraph {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        /* Element */
+        .paragraph__title {
+            font-weight: bold;
+            color: blue;
+        }
+
+        /* Modifier */
+        .paragraph--special {
+            background-color: lightyellow;
+        }
+
+        /* Additional Blocks */
+        .header {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Multiple Paragraphs with BEM Naming</div>
+    <div class="paragraph">
+        <div class="paragraph__title">Paragraph 1</div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="paragraph paragraph--special">
+        <div class="paragraph__title">Paragraph 2</div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, veritatis..</p>
+    </div>
+    <div class="paragraph">
+        <div class="paragraph__title">Paragraph 3</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi provident amet vero dicta repellendus! Eaque unde et eos eveniet mollitia!</p>
+    </div>
+    <div class="footer">© 2024 Example Company. All rights reserved.</div>
+</body>
+</html>
