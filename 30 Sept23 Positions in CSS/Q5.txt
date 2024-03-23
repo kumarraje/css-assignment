@@ -1,0 +1,3 @@
+In CSS, the z-index property controls the stacking order of positioned elements. 
+Elements with a higher z-index value will appear above elements with a lower z-index value. 
+This property is particularly useful when dealing with overlapping elements, such as when creating dropdown menus or layered interfaces.

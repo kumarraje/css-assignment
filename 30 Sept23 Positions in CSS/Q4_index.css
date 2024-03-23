@@ -1,0 +1,44 @@
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing:border-box
+}
+
+.content_head{
+    display:flex;
+    justify-content:space-between;
+    background-color:black;
+    position:sticky;
+    top:0;
+    height:50px;
+    padding:10px;
+}
+
+.nav_item{
+    margin: 30px;
+    color:#645e5e;
+    font-size:20px;
+}
+
+.active{
+    color:aliceblue;
+}
+.nav_bar .button{
+    border: 1px solid gold;
+    color:gold;
+    border-radius: 10%
+}
+
+.content_body section{
+    margin-top:100px;
+}
+.content_body h3{
+    margin-bottom:20px;
+}
+
+.logo{
+    color:aliceblue;
+    font-size:20px;
+}
+
