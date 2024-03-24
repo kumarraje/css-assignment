@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Website</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        ul{
+            display: inline-block;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .content{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+        }
+        .booking{
+            width: 50%;
+            margin: 10px;
+            margin-left: 100px;
+            margin-right: 50px;
+            padding: 10px;
+        }
+        .nav-container{
+            width: 321.81px;
+            height: 68.87px;
+            top: 63.69px;
+            left: 398.46px;
+            gap: 0px;
+            opacity: 0px;
+        }
+        .nav-container ul{
+            list-style-type: none;
+            display: flex;
+            gap: 10px;
+        }
+        .info li{
+            font-size: 15px;
+            margin-right: 8px;
+        }
+        .pagebtn{
+            width: Hug (71.42px)px;
+            height: Hug (38.28px)px;
+            padding: 10.14px 15.21px 10.14px 15.21px;
+            gap: 10.14px;
+            border-radius: 10px #ccc;
+            opacity: 0px;
+            margin-right: 4px;
+            margin-top: 5px;
+        }
+        .imagewindow img{
+            width:100%;
+            height:100vh;
+        }
+        .imagewindow{
+            width: 50%;
+        }
+        .active{
+            background-color:#FB792B;
+            color: white;
+        }
+
+        /* main section */
+        main{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            margin-top: 50px;
+            }
+
+        main .main-title{
+            font-size: 40px;
+            margin-bottom: 20px;
+            }
+        main .sub-main-title{
+            display: flex;
+            gap: 15px;
+            font-size: 27px;
+            }
+
+        main .choose-container{
+            display: flex;
+            gap: 15px;
+            }
+        main .choose-container button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 5px 10px;
+            font-size: 12px;
+            font-weight: 700;
+            background-color: transparent;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+            cursor: pointer;
+            }
+        main .choose-container .selected{
+            border-color:#213D77 ;
+            background-color: #213D77;
+            color: white;
+            }
+
+        main .journey-details-section-container{
+            border: 1px solid lightgray;
+            padding: 15px 0px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            }
+
+        main .card-element{
+                display: flex;
+                align-items: center;
+                }
+        .card-element-image-container img{
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            }
+        main .select-option{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            }
+        main .choose-location span{
+            font-size: 12px;
+            color: gray;
+            }
+        main .dropdown{
+            display: flex;
+            align-items: center;
+            color:gray;
+            }
+            /* search train button */
+        .search-button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            font-weight: 700;
+            background-color: #01BB0A;
+            padding: 15px 0;
+            font-size: 20px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+        /* common class */
+        .green{
+            color: #01BB0A;
+        }
+        .orange{
+            color: #FB792B;
+        }
+        .blue{
+            color: #213D77;
+        }
+        .border-right-left{
+            height: 100%;
+            width: 0;
+            border-right: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="booking">
+                <div class="nav">
+                    <div class="logo">
+                        <img src="./assets/Logo.png" alt="">
+                    </div>
+                    <div>
+                        <div class="nav-container">
+                            <ul class="info">
+                                <li>Ask Diksha</li>
+                                <li>Contact Us</li>
+                                <li>Alerts</li>
+                            </ul>
+                            <ul>
+                                <li><button class="pagebtn active">Login</button></li>
+                                <li><button class="pagebtn">Register</button></li>
+                                <li><button class="pagebtn">Agent Login</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <main>
+                    <div >
+                        <h1 class="main-title">Indian Railways</h1>
+                        <p class="sub-main-title">
+                            <span class="green">Safety</span>
+                            <span class="orange">Security</span>
+                            <span class="blue">Punctuality</span>
+                        </p>
+                    </div>
+                    <div class="choose-container">
+                        <button class="selected"><img src="assets/ticket_icon.png" alt=""> BOOK Ticket</button>
+                        <button><img src="assets/tick_icon.png" alt=""> PNR Status</button>
+                        <button><img src="assets/chart_icon.png" alt=""> Charts / Vacancy</button>
+                      </div>
+                      <div class="journey-details-container">
+                        <div class="journey-details-section-container">
+                          <div class="card-element">
+                            <div class="card-element-image-container">
+                              <img src="assets/departure_train_icon.png" alt="">
+                            </div>
+                            <div class="select-option">
+                              <div class="dropdown">
+                                <span>From</span>
+                                <img src="assets/expand_more_icon.png" alt="">
+                              </div>
+                              <div class="choose-location">
+                                <h2>Bangalore</h2>
+                                <span>KSR - Bangalore</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="center-from-to-arrow">
+                            <img src="assets/to_from_arrow.png" alt="">
+                          </div>
+                          <div class="card-element">
+                            <div class="card-element-image-container">
+                              <img src="assets/destination_train_icon.png" alt="">
+                            </div>
+                            <div class="select-option">
+                              <div class="dropdown">
+                                <span>To</span>
+                                <img src="assets/expand_more_icon.png" alt="">
+                              </div>
+                              <div class="choose-location">
+                                <h2>Kasaragod</h2>
+                                <span>KSD - Kasaragod</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="journey-details-section-container">
+                          <div class="card-element">
+                            <div class="card-element-image-container">
+                              <img src="assets/calander-icon.png" alt="">
+                            </div>
+                            <div class="select-option">
+                              <div class="dropdown">
+                                <span>Date</span>
+                                <img src="assets/expand_more_icon.png" alt="">
+                              </div>
+                              <div class="choose-location">
+                                <h2>01 Aug 23</h2>
+                                <span>Tuesday</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-element">
+                            <div class="card-element-image-container">
+                              <img src="assets/threedot-icon.png" alt="">
+                            </div>
+                            <div class="select-option">
+                              <div class="dropdown">
+                                <span>Class</span>
+                                <img src="assets/expand_more_icon.png" alt="">
+                              </div>
+                              <div class="choose-location">
+                                <h2>3A</h2>
+                                <span>AC 3 tier</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-element">
+                            <div class="card-element-image-container">
+                              <img src="assets/widgets_icon.png" alt="">
+                            </div>
+                            <div class="select-option">
+                              <div class="dropdown">
+                                <span>Seat Type</span>
+                                <img src="assets/expand_more_icon.png" alt="">
+                              </div>
+                              <div class="choose-location">
+                                <h2>TATKAL</h2>
+                                <span>AC 3 Tier</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <button class="search-button">Search Train <img src="assets/right-arrow-icon.png" alt=""></button>   
+                </main>
+            </div>
+            <div class="imagewindow">
+                <img src="./assets/train.png" alt="irctc">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

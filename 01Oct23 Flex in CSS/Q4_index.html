@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content{
+            width: Fixed (962px)px;
+            height: 100vh;
+            top: 25px;
+            left: -8px;
+            padding: 32px 48px 32px 48px;
+            gap: 32px;
+            opacity: 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F4F2FD;
+        }
+        .pricingcard{
+            width: Fixed (262px)px;
+            height: Fixed (363px)px;
+            padding: 32px;
+            gap: 32px;
+            border-radius: 8px ;
+            opacity: 0px;
+        }
+
+        .light{
+            box-shadow: 0px 1px 10px 0px #00000040;
+            color:  #202842;
+            background-color:#FFFFFF;
+        }
+        .dark{
+            box-shadow: 0px 1px 10px 0px #00000040;
+            background-color: #202842;
+            color: #FFFFFF;
+        }
+        .subscribe{
+            width: Hug (156px)px;
+            height: Hug (38px)px;
+            padding: 8px 24px 8px 24px;
+            gap: 10px;
+            border-radius: 50px;
+            opacity: 0px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .pricingcard h1{
+            margin-top: 10px;
+        }
+        .feature{
+            display: flex;
+            align-items: center;
+        }
+        .info{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="pricingcard light">
+                <h1>Free Plan</h1>
+                <p class="for">For Personal</p>
+                <h1>$0</h1>
+                <div class="info">
+                    <p class="feature"><span><img src="./assets/dark-tick.png" alt=""></span>1 users</p>
+                    <p class="feature"><span><img src="./assets/dark-tick.png" alt=""></span>4 Web mails</p>
+                    <p class="feature"><span><img src="./assets/dark-tick.png" alt=""></span>Responsive Website</p>
+                    <p class="feature"><span><img src="./assets/dark-tick.png" alt=""></span>Free SSL</p>
+                </div>
+                <button class="subscribe dark">Subscribe now</button>
+            </div>
+            <div class="pricingcard dark">
+                <h1>Basic Plan</h1>
+                <p class="for">For small business</p>
+                <h1>$29</h1>
+                <div class="info">
+                    <p class="feature"><span><img src="./assets/light-tick.png" alt=""></span>4 users</p>
+                    <p class="feature"><span><img src="./assets/light-tick.png" alt=""></span>10 Web mails</p>
+                    <p class="feature"><span><img src="./assets/light-tick.png" alt=""></span>Responsive Website</p>
+                    <p class="feature"><span><img src="./assets/light-tick.png" alt=""></span>Free SSL</p>
+                </div>
+                <button class="subscribe light">Subscribe now</button>
+            </div>
+            <div class="pricingcard light">
+                <h1>Pro Plan</h1>
+                <p class="for">For enterprise</p>
+                <h1>$49</h1>
+                <div class="info">
+                    <p class="feature"><span><img src="./assets/dark-tick.png" alt=""></span>Unlimited users</p>
+                    <p class="feature"><span><img src="./assets/dark-tick.png" alt=""></span>Unlimited Web mails</p>
+                    <p class="feature"><span><img src="./assets/dark-tick.png" alt=""></span>Responsive Website</p>
+                    <p class="feature"><span><img src="./assets/dark-tick.png" alt=""></span>Free SSL</p>
+                </div>
+                <button class="subscribe dark">Subscribe now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+justify-content:
+This property defines how the browser distributes space between and around content items along the main axis of the flex container. 
+It controls the alignment of flex items when they do not use all available space on the main axis.
+
+align-items:
+This property determines how flex items are aligned within the flex container along the cross axis. It specifies the default alignment for items inside the flex container.
+
+gap:
+The gap property is used to define the space between flex items in both directions, along the main axis and the cross axis. 
+It's often applied to the flex container itself. It simplifies spacing and creates consistent gaps between items without needing to apply margins to individual items.
+
+flex-direction:
+This property sets the direction of the main axis in the flex container. It determines whether the flex items are laid out in a row or a column, 
+as well as the direction in which they flow.
+
+flex-wrap:
+This property specifies whether flex items are forced onto a single line or can wrap onto multiple lines within the flex container. It controls whether the flex container allows its items to wrap if there's not enough space on a single line.
+These properties are crucial for controlling the layout and behavior of flex containers and their items, allowing developers to create flexible and responsive designs using Flexbox.
