@@ -1,0 +1,41 @@
+
+/* target all the anchor tags and change the text color to red */
+nav a{
+    color:red;
+}
+
+nav>h2{
+    background-color: yellow;
+    color:blue;
+}
+
+nav p:first-of-type {
+    color: red;
+}
+
+/* anchor tag with attribute "href" and change color to red and remove the text underline */
+nav ul li{
+    text-decoration:none;
+}
+
+nav .active{
+    text-decoration: underline;
+    color: green;
+}
+
+nav a[target="_self"]{
+    background-color: aqua;
+}
+
+nav p:last-of-type::after{
+    content:"..."
+}
+
+li::marker{
+    color: green;
+}
+
+nav p:nth-of-type(2)::first-letter {
+    color: red;
+    font-size: 30px;
+}
