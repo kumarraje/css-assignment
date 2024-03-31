@@ -1,0 +1,37 @@
+<!-- In CSS (Cascading Style Sheets), the var() function is used to define and utilize custom CSS variables. These variables allow you to store and reuse values throughout your CSS code, providing a more flexible and efficient way to manage styles. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+        --primarycolor:#00b7ff;
+        --secondarycolor:#6c757d;
+    }
+
+    .primary{
+        background-color: var(--primarycolor);
+        padding: 10px;
+        color: white;
+        border: none;
+    }
+
+    
+    .secondary{
+        background-color: var(--secondarycolor);
+        padding: 10px;
+        color: white;
+        border: none;
+    }
+</style>
+<body>
+    <div class="container">
+        <button class="primary">Primary Button</button>
+        <button class="secondary">Secondary Button</button>
+    </div>
+</body>
+</html>
